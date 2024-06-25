@@ -1,5 +1,10 @@
 def compare(a, b):
     pattern = ""
+    for i,j in zip (a,b):
+        if i !=j :
+            pattern += str(i)
+        else :
+            pattern += str(j)
     return pattern
 
 if __name__ == '__main__':
